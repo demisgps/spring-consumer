@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ConsumerServiceImpl implements ConsumerService {
     @Override
-    public void action(Message message) {
+    public void action(Message message) throws Exception{
         System.out.println(message.getText());
     }
 }
